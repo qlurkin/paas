@@ -118,7 +118,7 @@ def stop(name: str):
 def start(name):
     config = load_app_config(name)
     ports = []
-    for port in config.ports:
+    for port in config["ports"]:
         ports.append("-p")
         ports.append(port)
 
