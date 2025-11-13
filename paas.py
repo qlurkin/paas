@@ -163,10 +163,10 @@ if __name__ == "__main__":
     else:
         name = sys.argv[2]
         if cmd == "create":
-            git = sys.argv[3]
+            git = sys.argv[2]
             create(name, git)
         elif cmd == "port":
-            port = sys.argv[3]
+            port = sys.argv[2]
             add_port(name, port)
         elif cmd == "update":
             update(name)
